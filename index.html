@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARANG 2k26 Registration</title>
+    <style>
+                @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulseGlow {
+            0% { box-shadow: 0 0 5px rgba(99, 102, 241, 0.4); }
+            50% { box-shadow: 0 0 20px rgba(99, 102, 241, 0.8); }
+            100% { box-shadow: 0 0 5px rgba(99, 102, 241, 0.4); }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .form-container {
+            background: #ffffff;
+            width: 100%;
+            max-width: 650px;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        h1 {
+            color: #4f46e5;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .main-title {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: linear-gradient(to right, #4f46e5, #9333ea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #374151;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-left: 4px solid #4f46e5;
+            padding-left: 8px;
+        }
+
+        label {
+            font-weight: 600;
+            color: #4b5563;
+            display: block;
+            margin-top: 12px;
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="time"],
+        input[type="datetime-local"],
+        select {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="date"]:focus,
+        input[type="time"]:focus,
+        input[type="datetime-local"]:focus,
+        select:focus {
+            border-color: #4f46e5;
+            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+        }
+
+        .radio-group, .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 5px;
+        }
+
+        .radio-group label, .checkbox-group label {
+            font-weight: normal;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 0;
+            cursor: pointer;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            accent-color: #4f46e5;
+            transform: scale(1.1);
+        }
+
+        input[type="file"] {
+            margin-top: 5px;
+            font-size: 0.9rem;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #e5e7eb;
+            margin: 20px 0;
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        button, input[type="submit"], input[type="reset"] {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        input[type="submit"], button[type="submit"] {
+            background-color: #4f46e5;
+            color: white;
+            box-shadow: 0 4px 6px rgba(79, 70, 229, 0.2);
+        }
+
+        input[type="submit"]:hover, button[type="submit"]:hover {
+            background-color: #4338ca;
+            transform: translateY(-2px);
+            animation: pulseGlow 1.5s infinite;
+        }
+
+        input[type="reset"], button[type="reset"] {
+            background-color: #f3f4f6;
+            color: #374151;
+        }
+
+        input[type="reset"]:hover, button[type="reset"]:hover {
+            background-color: #e5e7eb;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .form-container {
+                padding: 20px;
+            }
+            .btn-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h1 class="main-title">TARANG 2k26</h1>
+    <form>
+        <h1>Registration Form</h1>
+        
+        <label>Name</label>
+        <input type="text" placeholder="Enter your full name" required>
+
+        <label>Department</label>
+        <input type="text" placeholder="e.g., Computer Science" required>
+
+        <label>College Name</label>
+        <input type="text" placeholder="Enter college name" required>
+
+        <hr>
+        <h2>Personal Details</h2>
+        
+        <label>Email</label>
+        <input type="email" placeholder="name@example.com" required>
+
+        <label>Gender</label>
+        <div class="radio-group">
+            <label><input type="radio" name="Gender" required> Male</label>
+            <label><input type="radio" name="Gender"> Female</label>
+            <label><input type="radio" name="Gender"> Others</label>
+        </div>
+
+        <hr>
+        <h2>Event Details</h2>
+        
+        <label>Select The Event</label>
+        <select required>
+            <option value="" disabled selected>Choose an event</option>
+            <option>Quiz</option>
+            <option>Solo Dance</option>
+            <option>Group Dance</option>
+            <option>Group Singing</option>
+            <option>Solo Singing</option>
+        </select>
+
+        <label>Payment Method</label>
+        <div class="radio-group">
+            <label><input type="radio" name="Pay" required> Online</label>
+            <label><input type="radio" name="Pay"> Offline</label>
+        </div>
+
+        <label>Payment Screenshot</label>
+        <input type="file" accept="image/*" required>
+
+        <hr>
+        
+        <label>Event Date</label>
+        <input type="date">
+
+        <label>Event Time</label>
+        <input type="time">
+
+        <label>Registration Date & Time</label>
+        <input type="datetime-local">
+
+        <hr>
+        <h2>Food Details</h2>
+
+        <label>Food Preference</label>
+        <div class="radio-group">
+            <label><input type="radio" name="food" value="veg"> Veg</label>
+            <label><input type="radio" name="food" value="nonveg"> Non-Veg</label>
+            <label><input type="radio" name="food" value="jain"> Jain</label>
+        </div>
+
+        <label>Meal Required</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox"> Breakfast</label>
+            <label><input type="checkbox"> Lunch</label>
+            <label><input type="checkbox"> Dinner</label>
+        </div>
+
+        <label>Food Tokens</label>
+        <select>
+            <option>1 Token - Rs.100</option>
+            <option>2 Tokens - Rs.180</option>
+            <option>Full Day - Rs.250</option>
+            <option>Not Required</option>
+        </select>
+
+        <div class="btn-container">
+            <button type="submit">Submit Registration</button>
+            <button type="reset">Reset Form</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
